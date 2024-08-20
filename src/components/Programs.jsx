@@ -1,10 +1,7 @@
-import React from 'react'
+import programsData from '../database/programsData.json'
 import Program from './Program'
 
 {/* removed from inside element js--wp-1 */}
-
-const programImages = ["mindfullness-woman","nutrition-stategies","workout-croped-min"]
-const programHeading = ["Mindfulness Training","Nutrition Strategies","Workout Routines"]
 
 function Programs() {
   return (
@@ -12,8 +9,8 @@ function Programs() {
       <h4>Upcoming programs</h4>
       <h2>Meditation, Yoga, Wellness <br /> & Many More</h2>
       <div className="programs-container"> 
-          {programImages.map((image,index) => {
-            return <Program image={image} heading={programHeading[index]}/>
+          {programsData.map(({heading,imageSource,imageAlt,description},index) => {
+            return <Program heading={heading} imageSource={imageSource} imageAlt={imageAlt} description={description} key={index}/>
           }
         )}
       </div>

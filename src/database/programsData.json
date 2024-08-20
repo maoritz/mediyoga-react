@@ -1,0 +1,20 @@
+[
+  {
+    "heading":"Mindfulness Training",
+    "imageSource":"src/assets/images/mindfullness-woman.png",
+    "imageAlt":"A woman meditating",
+    "description":"Montes parturient ac natoque veniam officiis consequat tenetur etsce"
+  },
+  {
+    "heading":"Nutrition Strategies",
+    "imageSource":"src/assets/images/nutrition-stategies.png",
+    "imageAlt":"Two women and lots of fruits.",
+    "description":"Montes parturient ac natoque veniam officiis consequat tenetur etsce"
+  },
+  {
+    "heading":"Workout Routines",
+    "imageSource":"src/assets/images/workout-croped-min.png",
+    "imageAlt":"A woman working out",
+    "description":"Montes parturient ac natoque veniam officiis consequat tenetur etsce"
+  }
+]

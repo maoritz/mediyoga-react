@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Program({image,heading}) {
+function Program({heading,imageSource,imageAlt,description}) {
   return (
   <div className="program-box">
-    <img src={`src/assets/images/${image}.png`} className="program-img" alt="mindfulness" />
+    <img src={imageSource} className="program-img" alt={imageAlt} />
     <h3>{heading}</h3>
-    <p>Montes parturient ac natoque veniam officiis consequat tenetur etsce</p>
+    <p>{description}</p>
   </div>
   )
 }
