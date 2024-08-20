@@ -23,7 +23,6 @@ function Services() {
               key={index}
               />
             ))}
-            
         </div>    
     </section>
   )
