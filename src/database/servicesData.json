@@ -1,0 +1,35 @@
+[
+  {
+    "serviceImage":"src/assets/images/parental-yoga2.png",
+    "serviceImageAlt":"mindfulness",
+    "heading": "Parental Yoga",
+    "days":"Mon,Wed,Fri" ,
+    "time": "6:30am - 7:45am",
+    "description":"Montes parturient ac natoque veniam officiis consequat tenetur etsce",
+    "instructorImage":"src/assets/images/instructor-1.jpg",
+    "instructorImageAlt":"Yoga Instructor",
+    "instructorName":"John Heaven"
+  },
+  {
+    "serviceImage":"src/assets/images/private-and-group-lessons.png",
+    "serviceImageAlt":"two girls and fruits",
+    "heading": "Private & Group Lessons",
+    "days":"Sat,Sun,Tue" ,
+    "time": "9:30am - 11:45am",
+    "description":"Montes parturient ac natoque veniam officiis consequat tenetur etsce",
+    "instructorImage":"src/assets/images/instructor-2.jpg",
+    "instructorImageAlt":"Yoga Instructor",
+    "instructorName":"Jenny Franklin"
+  },
+  {
+    "serviceImage":"src/assets/images/meditation-classes.png",
+    "serviceImageAlt":"workout",
+    "heading": "Meditation class",
+    "days":"Mon,Thu,Fri" ,
+    "time": "9:30am - 10:45am",
+    "description":"Montes parturient ac natoque veniam officiis consequat tenetur etsce",
+    "instructorImage":"src/assets/images/instructor-3.jpg",
+    "instructorImageAlt":"Meditation Instructor",
+    "instructorName":"Evyatar Cohen"
+  }
+]

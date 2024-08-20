@@ -1,0 +1,626 @@
+/* 
+#F6808C text
+#FA5A64 buttons notification
+#0C2E4E buttons text
+#F6FAFE background color
+*/
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #0c2e4e;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+.row {
+  width: 125rem;
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+  margin: 12rem 0;
+}
+
+.logo {
+  font-family: "Meie Script", cursive;
+  font-size: 5.5rem;
+  display: inline-block;
+}
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 8rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 3.75rem;
+  font-size: 4.4rem;
+}
+
+h3 {
+  margin: 1.5rem 0;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #f6808c;
+  text-shadow: 0 0 0.1rem #f6808c;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+/* ----- PERAGRAPHS ----- */
+p {
+  font-size: 2.1rem;
+  margin-bottom: 6.5rem;
+  line-height: 1.5em;
+  max-width: 50ch;
+}
+
+/* ----- LINKS ----- */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #0c2e4e;
+}
+
+a:hover,
+a:active {
+  color: #fa5a64;
+}
+
+/* ----- BUTTONS ----- */
+
+.btn:link,
+.btn:visited {
+  background-color: #0c2e4e;
+  color: white;
+  padding: 1.1em 3em;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  width: fit-content;
+  border: 1px solid #0c2e4e;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  background-color: transparent;
+  border: #0c2e4e solid 1px;
+  color: #0c2e4e;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fa5a64;
+  color: white;
+  border: 1px solid #fa5a64;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+.header {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("./assets/images/mediyoga-main.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text-box p {
+  width: 40ch;
+}
+
+.hero-text-box .btn {
+  margin-right: 1rem;
+}
+
+/* ----- NAVIGATION ----- */
+
+nav {
+  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.main-nav {
+  float: right;
+  padding-top: 1.4em;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.main-nav li:nth-child(5) {
+  margin-right: 6rem;
+}
+
+.main-nav li:nth-child(6) {
+  margin-right: 2rem;
+}
+
+/* ----- STICKY NAVIGATION ----- */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+/* ----- MOBILE NAVIGATION ----- */
+.mobile-nav-button {
+  float: right;
+  cursor: pointer;
+  padding-top: 0.8em;
+  display: none;
+}
+
+.mobile-nav-button:hover,
+.mobile-nav-button:active {
+  color: #0c2e4e;
+}
+
+.mobile-nav-button ion-icon {
+  font-size: 30px;
+}
+
+/* ----------------------------------------------- */
+/* PROGRAMS SECTION */
+/* ----------------------------------------------- */
+.programs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 34rem);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.program-box {
+  background-color: #fff;
+  text-align: center;
+}
+
+.program-img {
+  width: 100%;
+}
+
+/* ----------------------------------------------- */
+/* ABOUT US SECTION */
+/* ----------------------------------------------- */
+.about-us-section {
+  background-color: #f6fafe;
+  text-align: unset;
+  padding-bottom: 20px;
+}
+
+.about-us-image {
+  width: 82rem;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-box {
+  margin-top: 8rem;
+  width: 43rem;
+  width: 65ch;
+}
+
+/* ----------------------------------------------- */
+/* WHY CHOOSE US SECTION */
+/* ----------------------------------------------- */
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 34rem);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-img {
+  width: 100%;
+}
+
+.service-box {
+  text-align: center;
+  background-color: #f6fafe;
+}
+
+.service-box p {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #a9b7c4;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.service-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+.instructor-profile cite img {
+  height: 3em;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+  vertical-align: -webkit-baseline-middle;
+}
+
+cite {
+  font-size: 1.8em;
+}
+
+.instructor-profile {
+  padding-bottom: 2rem;
+}
+
+.service-box p::after {
+  content: "";
+
+  display: block;
+  border: #dce4ef solid 0.1px;
+  margin-top: 2.5rem;
+}
+
+.service-box .instructor-profile .btn {
+  display: block;
+  margin-top: 2rem;
+  width: 66%;
+  margin-left: 17%;
+}
+
+.service-box span {
+  font-size: 1.5rem;
+}
+
+/* ----------------------------------------------- */
+/* DISCOUNT SECTION */
+/* ----------------------------------------------- */
+.discount-section {
+  color: white;
+  background-color: #0c2e4e;
+  width: 90%;
+  margin-left: 5%;
+  text-align: start;
+}
+
+.discount-container {
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+  width: 100%;
+}
+
+.discount-text {
+  width: 60%;
+}
+
+.discount-header h2 {
+  font-size: 6rem;
+  line-height: 6.5rem;
+  margin-bottom: 2.5rem;
+}
+.discount-footer {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  width: 90%;
+}
+
+/* ----- DISCOUNT BUTTON ----- */
+
+.discount-button {
+  margin: 10rem 0 0 12rem;
+}
+
+.btn-discount:link,
+.btn-discount:visited {
+  background-color: #fa5a64;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-discount:hover,
+.btn-discount:active {
+  background-color: #f6808c;
+}
+
+/* ----------------------------------------------- */
+/* SCHEDULE SECTION */
+/* ----------------------------------------------- */
+
+/* ----- NAVIGATION ----- */
+.schedule-nav {
+  display: flex;
+  direction: row;
+  font-size: 1.6rem;
+  font-weight: 500;
+  gap: 2.5rem;
+  justify-content: center;
+  list-style: none;
+}
+
+/* ----- TABLE ----- */
+.schedule-container {
+  display: grid;
+  grid-template-columns: repeat(8, 12.8rem);
+  grid-template-rows: 7rem repeat(4, 12.8rem);
+  font-size: 1.6rem;
+  margin-top: 3.75rem;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.schedule-item {
+  border: solid #edf5fd 1px;
+  text-align: center;
+}
+
+.schedule-item div {
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.gray-background {
+  background-color: #f8fbff;
+}
+
+.days-row {
+  padding-top: 2.5rem;
+}
+
+.hours-row {
+  padding-top: 3.5rem;
+}
+
+.hours-column {
+  padding: 4.5rem 0 0 0;
+}
+
+/* ----------------------------------------------- */
+/* GALLERY SECTION */
+/* ----------------------------------------------- */
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.photos-container img {
+  margin: 5px;
+  height: 25em;
+  flex-grow: 3;
+}
+
+/* ----------------------------------------------- */
+/* COMMENTS SECTION */
+/* ----------------------------------------------- */
+.comments-container {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5%;
+}
+
+.comments-container p::before {
+  content: "\201C";
+  display: block;
+  font-size: 25em;
+  margin-top: 0.4em;
+  color: #fddfe1;
+}
+.comments-container p {
+  max-width: 50ch;
+  font-weight: 500;
+}
+.comments-container img {
+  height: 6em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.comments-container cite {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+.custumer {
+  font-size: 1.5em;
+}
+
+/* ----------------------------------------------- */
+/* OUR TEAM SECTION */
+/* ----------------------------------------------- */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 26rem);
+  justify-content: center;
+}
+
+.team-image {
+  height: 38rem;
+}
+
+/* ----------------------------------------------- */
+/* PRICING PLANS SECTION */
+/* ----------------------------------------------- */
+.pricing-section {
+  display: block;
+  text-align: unset;
+}
+
+.pricing-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 78rem 76rem;
+}
+
+.pricing-video {
+  vertical-align: baseline;
+}
+
+/* idth="700" height="745" */
+video {
+  width: 73rem;
+  height: 81.2rem;
+  background: linear-gradient(
+    to right,
+    #898681,
+    #96938e,
+    #a4a09b,
+    #b1ada9,
+    #bfbab7,
+    #bfbab7,
+    #bfbab7,
+    #bfbab7,
+    #b1ada9,
+    #a4a09b,
+    #96938e,
+    #898681
+  );
+}
+
+.price-box-container {
+  display: grid;
+  grid-template-columns: 14rem 37.5rem 23rem;
+  grid-template-rows: 20.7rem;
+  border: #e3f0fb solid 1px;
+  border-radius: 5px;
+  margin-bottom: 2.5rem;
+}
+
+.price-box-container .plan-icon {
+  padding-top: 47%;
+  background-color: #f6fafe;
+  text-align: center;
+  border-right: #e3f0fb 1px solid;
+}
+
+.enroll-plan {
+  padding-top: 2em;
+}
+
+.i-icon {
+  font-size: 7.5em;
+}
+
+.checkmark-container {
+  display: inline-block;
+  color: #f96a73;
+  width: 1em;
+  height: 1em;
+  border-radius: 99px;
+  background-color: #fbe7e6;
+  text-align: center;
+}
+
+.plan-advantages {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+.plan-advantage {
+  margin-top: 1em;
+  text-align: start;
+}
+
+.checkmark-icon {
+  font-size: 0.8em;
+}
+
+.plan-type {
+  margin-top: 5rem;
+  text-align: start;
+  margin-left: 4rem;
+}
+
+.per-week {
+  font-size: 1.6em;
+}
+
+.price-box-container .enroll-now {
+  margin-top: 3rem;
+}
+
+.price-per-week .price {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 6em;
+  color: #fa5a64;
+}
+
+.pricing-headings-queries {
+  display: none;
+}
+
+/* ----------------------------------------------- */
+/* ANIMATIONS */
+/* ----------------------------------------------- */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-5 {
+  opacity: 0;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated,
+.js--wp-5.animate__animated {
+  opacity: 1;
+}

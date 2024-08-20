@@ -1,0 +1,366 @@
+@media only screen and (max-width: 1560px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 1375px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 1251px) {
+  /* ----------------------------------------------- */
+  /* ABOUT US */
+  /* ----------------------------------------------- */
+  .about-us-box {
+    width: 72%;
+    margin: 4em 0;
+  }
+  .about-us-image {
+    display: none;
+  }
+
+  /* ----------------------------------------------- */
+  /* PRICING */
+  /* ----------------------------------------------- */
+  .plans-boxes h2,
+  .plans-boxes h4 {
+    display: none;
+  }
+  .pricing-headings-queries {
+    display: block;
+  }
+  .pricing-section {
+    display: block;
+    text-align: center;
+  }
+  .price-per-week {
+    margin-left: 0.5em;
+  }
+  video {
+    width: 75.5em;
+  }
+  .pricing-container {
+    grid-template-columns: 75.5em;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  /* ----------------------------------------------- */
+  /* REUSEABLE */
+  /* ----------------------------------------------- */
+  .row {
+    width: 100%;
+    padding: 2%;
+  }
+  nav {
+    padding-top: 0;
+  }
+
+  /* ----------------------------------------------- */
+  /* DISCOUNT */
+  /* ----------------------------------------------- */
+  .discount-container {
+    padding: 5em 0;
+  }
+  .discount-text {
+    width: 70%;
+  }
+
+  /* ----- DISCOUNT BUTTONS ----- */
+  .discount-button {
+    margin: 12em 0 0 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  /* ----- MOBILE NAVIGATION MENU ----- */
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    font-size: 1.2em;
+    margin-left: 1%;
+    margin-top: 1em;
+    z-index: 9999;
+    left: 0;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #efefef;
+  }
+
+  .main-nav li:nth-child(6),
+  .main-nav li:nth-child(7) {
+    display: none;
+  }
+
+  .main-nav li {
+    display: block;
+    text-align: start;
+    padding: 0.7em 2%;
+    width: 100%;
+  }
+  .main-nav li::after {
+    content: "";
+    border-bottom: 0.1px solid #eaeef1;
+    display: block;
+    width: 96%;
+    margin-top: 0.5em;
+  }
+
+  .mobile-nav-button {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  /* ----------------------------------------------- */
+  /* PROGRAMS */
+  /* ----------------------------------------------- */
+  .programs-container {
+    grid-template-columns: 75em;
+  }
+
+  /* ----------------------------------------------- */
+  /* WHY CHOOSE US */
+  /* ----------------------------------------------- */
+  .service-container {
+    grid-template-columns: 75em;
+    gap: 5em;
+  }
+  .why-choose-us-section {
+    margin: 5em 0;
+  }
+  .service-box span {
+    font-size: 13px;
+  }
+  .service-box p {
+    font-size: 16px;
+  }
+  .service-box .instructor-profile .btn {
+    width: 30%;
+    margin-left: 35%;
+  }
+  /* ----------------------------------------------- */
+  /* DISCOUNT */
+  /* ----------------------------------------------- */
+
+  .discount-container {
+    text-align: center;
+    padding: 3em 0;
+    flex-direction: column;
+  }
+  .discount-text {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .discount-header {
+    margin: 2em 0;
+  }
+  .discount-footer {
+    display: none;
+  }
+
+  /* ----- DISCOUNT BUTTONS ----- */
+  .discount-button {
+    margin: 2.5em 0 5em 0;
+  }
+
+  /* ----------------------------------------------- */
+  /* SCHEDULE */
+  /* ----------------------------------------------- */
+  .schedule-container {
+    grid-template-columns: repeat(8, 7em);
+    grid-template-rows: 5em repeat(4, 7em);
+    font-size: 11.5px;
+  }
+
+  .hours-row {
+    padding-top: 2em;
+  }
+
+  .hours-column {
+    padding: 2.8em 0 0 0;
+  }
+
+  /* ----------------------------------------------- */
+  /* OUR TEAM SECTION */
+  /* ----------------------------------------------- */
+  .team-container {
+    grid-template-columns: repeat(2, 38em);
+    row-gap: 13px;
+  }
+  .team-image {
+    height: 60em;
+  }
+}
+
+@media only screen and (max-width: 663px) {
+  .schedule-section {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  html {
+    font-size: 37%;
+    -webkit-text-size-adjust: none;
+  }
+
+  /* ----------------------------------------------- */
+  /* REUSEABLE */
+  /* ----------------------------------------------- */
+  h3 {
+    font-size: 4em;
+  }
+  h4 {
+    font-size: 20px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 2.8em;
+  }
+
+  .service-box .instructor-profile .btn {
+    width: 44%;
+    margin-left: 28%;
+  }
+
+  .hero-buttons:last-child {
+    display: block;
+    padding: 1.2em 2.45em;
+    margin-top: 2em;
+    width: max-content;
+  }
+
+  .comments-container img {
+    height: 11em;
+  }
+  .custumer {
+    font-size: 12px;
+  }
+
+  /* ----------------------------------------------- */
+  /* HEADER */
+  /* ----------------------------------------------- */
+  .header {
+    background-image: none;
+    background-color: #f8fbff;
+    height: auto;
+  }
+  .hero-text-box {
+    position: relative;
+    margin-left: 2%;
+    margin-top: 22rem;
+    top: 0;
+    left: 0;
+    transform: unset;
+  }
+  .hero-text-box p {
+    width: 77%;
+    margin-bottom: 3.2em;
+  }
+  .mobile-nav-icon {
+    padding-top: 0;
+  }
+  cite {
+    font-size: 14px;
+  }
+  /* ----------------------------------------------- */
+  /* PRICING */
+  /* ----------------------------------------------- */
+
+  .price-box-container {
+    grid-template-columns: 74.8em;
+    grid-template-rows: 15em 30em 25em;
+  }
+  .price-box-container .plan-icon {
+    padding-top: 1.5em;
+    border-right: none;
+    border-bottom: #e3f0fb 1px solid;
+  }
+  .i-icon {
+    font-size: 9em;
+    margin-top: 0.2em;
+  }
+  .enroll-plan {
+    padding-top: 0;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  .plan-type {
+    text-align: center;
+  }
+  .price-per-week {
+    font-size: 1.5em;
+    margin: 0 0 3em 0;
+  }
+  .plan-advantage {
+    margin-top: 0.8em;
+  }
+  .plan-advantages {
+    padding-left: 4.2em;
+    font-size: 3em;
+  }
+  .price-box-container .enroll-now {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  html {
+    font-size: 25%;
+  }
+
+  h1 {
+    font-size: 10em;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 3.3em;
+  }
+  .service-box .instructor-profile .btn {
+    width: 54%;
+    margin-left: 23%;
+  }
+  .per-week {
+    font-size: 2em;
+  }
+  .hero-text-box p {
+    margin-bottom: 4em;
+    margin-top: 2em;
+  }
+  .main-nav {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 281px) {
+  html {
+    font-size: 20%;
+  }
+}
