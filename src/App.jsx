@@ -5,6 +5,7 @@ import About from './components/About'
 import Services from './components/Services'
 import Discount from './components/Discount'
 import Schedule from './components/Schedule'
+import Gallery from './components/Gallery'
 
 // https://maoritz.github.io/mediyoga/
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Discount />
       <Schedule />
+      <Gallery />
     </>
   )
 }
