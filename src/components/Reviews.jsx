@@ -26,6 +26,7 @@ function Testimonials() {
   }, [])
 
 
+  
   return (
   <section className="comments-section">
       <div className="comments-container">
