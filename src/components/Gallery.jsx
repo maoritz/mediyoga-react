@@ -16,12 +16,7 @@ function Gallery() {
       const response = await fetch(`${url}`);
       const data = await response.json()
       let imagesArray = data.results
-
       setImages(imagesArray)
-      // for (let index = 0; index < imagesArray.length; index++) {
-      //   photosContainer.append(`<img src="${imagesArray[index].urls.regular}" alt="${imagesArray[index].alt_description}">`)
-      // }
-      
       
     }catch (err){
       console.log(err)
@@ -35,7 +30,7 @@ function Gallery() {
   return (
     <section className="app-photos">
       <div className="photos-container">
-        {images.map(image => {
+        {images.map((image,index) => {
           return <img src={image.urls.regular} alt={image.alt_description} key={image.id}/>
         })}
       </div>
