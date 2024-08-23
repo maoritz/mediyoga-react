@@ -4,7 +4,6 @@ function About() {
   return (
   <section className="about-us-section js--about-us-section">
       <div className="about-us-container">
-          <img src="./img/about-us-background.png" className="about-us-image" alt="woman in yoga position" />
           <div className="about-us-box">
               <h4>About us</h4>
               <h2>Take your Yoga to the <br /> next level with us</h2>
