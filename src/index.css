@@ -510,7 +510,7 @@ cite {
 .pricing-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 78rem 76rem;
+  grid-template-columns: 78rem;
 }
 
 .pricing-video {

@@ -25,7 +25,6 @@ function Testimonials() {
     showReviewDetails()
   }, [])
 
-
   
   return (
   <section className="comments-section">

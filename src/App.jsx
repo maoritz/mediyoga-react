@@ -8,6 +8,7 @@ import Schedule from './components/Schedule'
 import Gallery from './components/Gallery'
 import Reviews from './components/Reviews'
 import Team from './components/Team'
+import Pricing from './components/Pricing'
 
 // https://maoritz.github.io/mediyoga/
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Gallery />
       <Reviews />
       <Team />
+      <Pricing />
     </>
   )
 }
